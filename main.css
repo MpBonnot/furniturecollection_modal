@@ -1,6 +1,8 @@
 
 body {
-    font-family: Arial;
+    font-family: all-round-gothic,sans-serif;
+font-weight: 400;
+font-style: normal;
   }
   
   .container {
@@ -12,15 +14,34 @@ body {
     font-size: 1.5rem;
     margin: 0;
   }
+
+  .title{
+      font-size:4rem;
+      max-width:100%;
+      width: 30%;
+      margin-top:5%;
+      margin-left:2%;
+      text-align: justify;
+  text-justify: inter-word;
+  }
   
   .filter {
     padding: 2rem;
+    border: 1px solid black;
+    border-radius:25px;
   }
   
-  .grid-section {
+  /*.grid-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    grid-template-columns: repeat(7, 1fr);*/
+
+    .grid-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
   
   .furniture-container {
