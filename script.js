@@ -70,7 +70,7 @@ function showFurniture() {
     var furnitureImage = document.createElement("img");
     furnitureImage.classList.add("furniture-image");
     furnitureImage.classList.add("js-modal-toggle");
-    furnitureImage.src = furniturework.fields.song_image[0].url;
+    furnitureImage.src = furniturework.fields.furniture_image[0].url;
     furnitureContainer.append(furnitureImage);
 
     // add modal to song container

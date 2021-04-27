@@ -27,7 +27,7 @@ body {
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid white;
     flex-basis: 33%;
   }
   
@@ -75,6 +75,20 @@ body {
     display: flex;
   }
   
+
+  .main-container{
+    padding:1rem;
+    display:grid;
+    grid-gap:2rem;
+    grid-template-columns: 0.5fr 2fr ;
+  }
+
+  .filter-menu{
+    border: 1px solid black;
+    border-radius:25px;
+    padding: 1rem;
+    align-content:center;
+  }
   
 
 
