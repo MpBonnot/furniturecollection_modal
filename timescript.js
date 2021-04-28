@@ -1,6 +1,3 @@
-
-
-
 //load the airtable library, call it "Airtable" 
 var Airtable = require("airtable");
 console.log(Airtable);
@@ -128,9 +125,9 @@ function showFurniture() {
     //get genre field from airtable
     //loop through the array and add each genre as a class to the song container
 
-    var furnitureType = furniturework.fields.type;
-    furnitureType.forEach (function (type){
-      furnitureContainer.classList.add(type);
+    var furniturePeriod = furniturework.fields.period;
+    furniturePeriod.forEach (function (period){
+      furnitureContainer.classList.add(period);
     });
 
 
@@ -141,97 +138,130 @@ function showFurniture() {
     //change backround of candles to taupe
     //else change to white
 
-    var filterCandles = document.querySelector(".candles");
-    filterCandles.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("candles")) {
+    var filterTwenties = document.querySelector(".twenties");
+    filterTwenties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("twenties")) {
         furnitureContainer.style.display = "block";
-        filterCandles.style.background = "orangered";
-        filterCandles.style.border = "orangered";
-        filterCandles.style.color = white;
       }  else{
         furnitureContainer.style.display = "none";
-        filterCandles.style.background = "white";
-        filterCandles.style.border = "orangered";
-        filterCandles.style.color = black;
     
       } 
     });
 
 
-    var filterSeating = document.querySelector(".seating");
-    filterSeating.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("seating")) {
+    var filterThirties = document.querySelector(".thirties");
+    filterThirties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("thirties")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
-      } 
-    });
-
-    var filterLamps = document.querySelector(".lamps");
-    filterLamps.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("lamps")) {
-        furnitureContainer.style.display = "block";
-      }  else{
-        furnitureContainer.style.display = "none";
+    
       } 
     });
 
 
-    var filterMirrors = document.querySelector(".mirrors");
-    filterMirrors.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("mirrors")) {
+    var filterFourties = document.querySelector(".fourties");
+    filterFourties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("fourties")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
+    
       } 
     });
 
-    var filterRugs = document.querySelector(".rugs");
-    filterRugs.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("rugs")) {
+    var filterFifties = document.querySelector(".fifties");
+    filterFifties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("fifties")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
-      } 
-    });
-
-    var filterStorage = document.querySelector(".storage");
-    filterStorage.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("storage")) {
-        furnitureContainer.style.display = "block";
-      }  else{
-        furnitureContainer.style.display = "none";
+    
       } 
     });
 
 
-    var filterTables = document.querySelector(".tables");
-    filterTables.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("tables")) {
+    var filterSixties = document.querySelector(".sixties");
+    filterSixties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("sixties")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
+    
       } 
     });
 
-    var filterTableware = document.querySelector(".tableware");
-    filterTableware.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("tableware")) {
+
+    var filterSeventies = document.querySelector(".seventies");
+    filterSeventies.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("seventies")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
+    
       } 
     });
 
-    var filterVases = document.querySelector(".vases");
-    filterVases.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("vases")) {
+
+    var filterEighties = document.querySelector(".eighties");
+    filterEighties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("eighties")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
+    
       } 
     });
 
+
+    var filterNineties = document.querySelector(".nineties");
+    filterNineties.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("nineties")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+    
+      } 
+    });
+
+    var filterTwothousand = document.querySelector(".twothousand");
+    filterTwothousand.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("twothousand")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+    
+      } 
+    });
+
+
+    var filterTwentytens = document.querySelector(".twentytens");
+    filterTwentytens.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("twentytens")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+    
+      } 
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     var filterReset = document.querySelector(".reset");
     filterReset.addEventListener("click",function(){
       furnitureContainer.style.display = "block";

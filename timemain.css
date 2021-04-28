@@ -1,4 +1,3 @@
-
 body {
     font-family: all-round-gothic,sans-serif;
 font-weight: 400;
@@ -59,7 +58,7 @@ font-style: normal;
     font-size:1.5rem;
   }
 
-  .candles{
+  .twenties{
       border:1px solid black;
       border-radius:30px;
       padding:0.5rem;
@@ -67,14 +66,14 @@ font-style: normal;
       max-width:100%;
   }
 
-  .candles:hover{
+  .twenties:hover{
       font-size: 2rem;
       border:2px solid orangered;
   }
 
   
 
-  .seating{
+  .thirties{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -82,12 +81,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.seating:hover{
+.thirties:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
   
-.lamps{
+.fourties{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -95,12 +94,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.lamps:hover{
+.fourties:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
 
-.mirrors{
+.fifties{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -108,12 +107,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.mirrors:hover{
+.fifties:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
 
-.rugs{
+.sixties{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -121,12 +120,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.rugs:hover{
+.sixties:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
 
-.storage{
+.seventies{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -134,12 +133,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.storage:hover{
+.seventies:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
 
-.tables{
+.eighties{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -147,12 +146,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.tables:hover{
+.eighties:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
 
-.tableware{
+.nineties{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -160,12 +159,12 @@ font-style: normal;
     max-width:100%;
 }
 
-.tableware:hover{
+.nineties:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
 
-.vases{
+.twothousand{
     border:1px solid black;
     border-radius:30px;
     padding:0.5rem;
@@ -173,10 +172,26 @@ font-style: normal;
     max-width:100%;
 }
 
-.vases:hover{
+.twothousand:hover{
     font-size: 2rem;
     border:2px solid orangered;
 }
+
+
+.twentytens{
+    border:1px solid black;
+    border-radius:30px;
+    padding:0.5rem;
+    margin-top:2rem;
+    max-width:100%;
+}
+
+.twentytens:hover{
+    font-size: 2rem;
+    border:2px solid orangered;
+}
+
+
 
 .reset{
     border:1px solid black;
@@ -299,14 +314,14 @@ a:visited{
 
 .color{
     position:absolute;
-
+    color:black;
     font-size:2rem;
 }
 
 
 
 .type{
-    color:orangered;
+    color:black;
     position:absolute;
     font-size:2rem;
     
@@ -314,10 +329,10 @@ a:visited{
   
 
 .time{
+    color:orangered;
     position:absolute;
     font-size:2rem;
 }
   
-
 
 

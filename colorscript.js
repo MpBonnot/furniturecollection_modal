@@ -1,6 +1,4 @@
 
-
-
 //load the airtable library, call it "Airtable" 
 var Airtable = require("airtable");
 console.log(Airtable);
@@ -128,10 +126,11 @@ function showFurniture() {
     //get genre field from airtable
     //loop through the array and add each genre as a class to the song container
 
-    var furnitureType = furniturework.fields.type;
-    furnitureType.forEach (function (type){
-      furnitureContainer.classList.add(type);
+    var furnitureColor = furniturework.fields.color;
+    furnitureColor.forEach (function (color){
+      furnitureContainer.classList.add(color);
     });
+
 
 
     //add event listener to our filter 
@@ -141,63 +140,29 @@ function showFurniture() {
     //change backround of candles to taupe
     //else change to white
 
-    var filterCandles = document.querySelector(".candles");
-    filterCandles.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("candles")) {
+    var filterRed = document.querySelector(".red");
+    filterRed.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("red")) {
         furnitureContainer.style.display = "block";
-        filterCandles.style.background = "orangered";
-        filterCandles.style.border = "orangered";
-        filterCandles.style.color = white;
       }  else{
         furnitureContainer.style.display = "none";
-        filterCandles.style.background = "white";
-        filterCandles.style.border = "orangered";
-        filterCandles.style.color = black;
     
       } 
     });
 
 
-    var filterSeating = document.querySelector(".seating");
-    filterSeating.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("seating")) {
+    var filterOrange = document.querySelector(".orange");
+    filterOrange.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("orange")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
       } 
     });
 
-    var filterLamps = document.querySelector(".lamps");
-    filterLamps.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("lamps")) {
-        furnitureContainer.style.display = "block";
-      }  else{
-        furnitureContainer.style.display = "none";
-      } 
-    });
-
-
-    var filterMirrors = document.querySelector(".mirrors");
-    filterMirrors.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("mirrors")) {
-        furnitureContainer.style.display = "block";
-      }  else{
-        furnitureContainer.style.display = "none";
-      } 
-    });
-
-    var filterRugs = document.querySelector(".rugs");
-    filterRugs.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("rugs")) {
-        furnitureContainer.style.display = "block";
-      }  else{
-        furnitureContainer.style.display = "none";
-      } 
-    });
-
-    var filterStorage = document.querySelector(".storage");
-    filterStorage.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("storage")) {
+    var filterYellow = document.querySelector(".yellow");
+    filterYellow.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("yellow")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
@@ -205,32 +170,120 @@ function showFurniture() {
     });
 
 
-    var filterTables = document.querySelector(".tables");
-    filterTables.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("tables")) {
+    var filterGreen = document.querySelector(".green");
+    filterGreen.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("green")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
       } 
     });
 
-    var filterTableware = document.querySelector(".tableware");
-    filterTableware.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("tableware")) {
+    var filterBlue = document.querySelector(".blue");
+    filterBlue.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("blue")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
       } 
     });
 
-    var filterVases = document.querySelector(".vases");
-    filterVases.addEventListener("click",function(){
-      if (furnitureContainer.classList.contains("vases")) {
+    var filterPurple = document.querySelector(".purple");
+    filterPurple.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("purple")) {
         furnitureContainer.style.display = "block";
       }  else{
         furnitureContainer.style.display = "none";
       } 
     });
+
+
+    var filterPink = document.querySelector(".pink");
+    filterPink.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("pink")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+    var filterBrown = document.querySelector(".brown");
+    filterBrown.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("brown")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+    var filterBlack = document.querySelector(".black");
+    filterBlack.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("black")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+    var filterCream = document.querySelector(".cream");
+    filterCream.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("cream")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+    var filterGrey = document.querySelector(".grey");
+    filterGrey.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("grey")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+    var filterWhite = document.querySelector(".white");
+    filterWhite.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("white")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+
+    var filterMetallic = document.querySelector(".metallic");
+    filterMetallic.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("metallic")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+
+
+    var filterWood = document.querySelector(".wood");
+    filterWood.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("wood")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
+
+
+    var filterGlass = document.querySelector(".glass");
+    filterGlass.addEventListener("click",function(){
+      if (furnitureContainer.classList.contains("glass")) {
+        furnitureContainer.style.display = "block";
+      }  else{
+        furnitureContainer.style.display = "none";
+      } 
+    });
+
 
     var filterReset = document.querySelector(".reset");
     filterReset.addEventListener("click",function(){
